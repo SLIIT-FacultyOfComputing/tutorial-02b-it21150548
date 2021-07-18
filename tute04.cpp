@@ -29,8 +29,7 @@ int main() {
 }
 long Factorial(int no)
 {
-  long fac;
-  fac = 1;
+  long fac = 1;
     for (int r=no; r >= 1; r--) {
         fac = fac * r;
     }
@@ -38,5 +37,7 @@ long Factorial(int no)
 }
 long nCr(int n, int r)
 {
+  long ncr = Factorial(n)/ (Factorial(r)* Factorial(n-r));
   
+   return ncr;
 }
